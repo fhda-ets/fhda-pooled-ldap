@@ -1,0 +1,38 @@
+{
+  "name": "fhda-pooled-ldap",
+  "version": "1.0.0",
+  "description": "Create scalable connection pools to LDAP servers",
+  "author": "Matt Rapczynski <rapczynskimatthew@fhda.edu",
+  "license": "BSD-3-Clause",
+  "main": "src/Index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://stash.ad.fhda.edu/projects/NPMP/repos/fhda-pooled-ldap/browse"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "es6-error": "^4.0.0",
+    "ldapjs": "^1.0.1",
+    "pool2": "^1.4.1"
+  },
+  "devDependencies": {
+    "docdash": "^0.4.0",
+    "eslint": "^2.13.1",
+    "jsdoc": "^3.4.3",
+    "mocha": "^2.3.3",
+    "mocha-better-spec-reporter": "^3.0.2",
+    "mocha-eslint": "^2.1.1",
+    "should": "^9.0.2"
+  },
+  "scripts": {
+    "docs": "rm -Rf docs && node_modules/.bin/jsdoc -c jsdoc.json",
+    "test": "node_modules/mocha/bin/mocha --recursive -R mocha-better-spec-reporter --bail tests"
+  }
+}
