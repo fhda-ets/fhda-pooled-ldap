@@ -26,7 +26,7 @@ connection.search('ou=People,dc=school,dc=edu', '(cn=someuser)')
 	});
 ```
 
-For more API documents, open `docs/index.html` in a browser.
+For more API documents, open https://fhda-ets.github.io/fhda-pooled-ldap/ in a browser.
 
 #### Advanced
 
