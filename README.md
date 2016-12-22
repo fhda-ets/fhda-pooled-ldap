@@ -35,7 +35,7 @@ For more API documents, open https://fhda-ets.github.io/fhda-pooled-ldap/ in a b
 A dependency-free event buffer is built-in so that you can tap into log events emitted by the connection pool. Highly recommended for non-production debugging.
 
 ```javascript
-PooledLdap.events.on('log', (message metadata) => {
+PooledLdap.events.on('log', (message, metadata) => {
 	Logger.debug(message, metadata);
   	// ... or do whatever you want with the debugging information
 });
