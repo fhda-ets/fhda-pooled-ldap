@@ -99,7 +99,10 @@ class PooledLdapConnection {
                     EventLogger.log(`Encountered a serious error on LDAP client for ${url}`, { error: error });
 
                     // Raise error up the stack to be dealt with
-                    throw error;
+                    //throw error;
+
+                    // Remove client from the pool
+                    this.remove(client);
                 });
 
                 // Attach an error handler to the client

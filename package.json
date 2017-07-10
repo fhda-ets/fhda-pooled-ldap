@@ -1,6 +1,6 @@
 {
   "name": "fhda-pooled-ldap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create scalable connection pools to LDAP servers",
   "author": "Matt Rapczynski <rapczynskimatthew@fhda.edu",
   "license": "BSD-3-Clause",
